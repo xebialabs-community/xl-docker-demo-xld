@@ -4,7 +4,8 @@ Docker image that has XLD installed.
 
 # Supported tags #
 
-* `latest`, `v6.0.1.1`
+* `latest`, `v6.0.1.2`
+* `v6.0.1.1`
 * `v5.5.5.1`
 
 # Starting #
