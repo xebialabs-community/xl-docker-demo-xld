@@ -2,6 +2,19 @@
 
 Docker image that has XLD installed.
 
+# CI status #
+
+[![Docker Hub][xl-docker-demo-xld-docker-hub-image] ][xl-docker-demo-xld-docker-hub-url]
+[![License: MIT][xl-docker-demo-xld-license-image] ][xl-docker-demo-xld-license-url]
+
+
+[xl-docker-demo-xld-docker-hub-image]: https://img.shields.io/badge/docker-ready-blue.svg
+[xl-docker-demo-xld-docker-hub-url]: https://registry.hub.docker.com/u/xebialabs/xl-docker-demo-xld/
+[xl-docker-demo-xld-license-image]: https://img.shields.io/badge/License-MIT-yellow.svg
+[xl-docker-demo-xld-license-url]: https://opensource.org/licenses/MIT
+
+
+
 # Supported tags #
 
 * `latest`, `v6.2.1.1`
