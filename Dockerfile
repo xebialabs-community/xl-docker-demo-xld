@@ -8,7 +8,7 @@ RUN wget -O /tmp/xl-deploy-trial-server.zip https://dist.xebialabs.com/xl-deploy
 RUN wget -O /tmp/xl-deploy-trial-cli.zip https://dist.xebialabs.com/xl-deploy-trial-cli.zip && \
     mkdir -p /opt/xld && \
     unzip /tmp/xl-deploy-trial-cli.zip -d /opt/xld && \
-    mv /opt/xld/xl-deploy-7.0*-cli /opt/xld/cli && \
+    mv /opt/xld/xl-deploy-*-cli /opt/xld/cli && \
     rm -rf /tmp/xl-deploy-trial-cli.zip
 ADD resources/deployit.conf /opt/xld/server/conf/deployit.conf
 RUN /opt/xld/server/bin/run.sh -setup -reinitialize -force
