@@ -11,8 +11,8 @@ RUN wget -O /tmp/xl-deploy-trial-cli.zip https://dist.xebialabs.com/xl-deploy-tr
     mv /opt/xld/xl-deploy-*-cli /opt/xld/cli && \
     rm -rf /tmp/xl-deploy-trial-cli.zip
 ADD resources/deployit.conf /opt/xld/server/conf/deployit.conf
-RUN /opt/xld/server/bin/run.sh -setup -reinitialize -force
 ADD resources/supervisord.conf /etc/supervisord.conf
-RUN ln -fs /license/deployit-license.lic /opt/xld/server/conf/deployit-license.lic
+RUN /opt/xld/server/bin/run.sh -setup -reinitialize -force \
+    && ln -fs /license/deployit-license.lic /opt/xld/server/conf/deployit-license.lic
 CMD ["/usr/bin/supervisord"]
 EXPOSE 4516
