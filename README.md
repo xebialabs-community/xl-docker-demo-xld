@@ -17,17 +17,24 @@ Docker image that has XLD installed.
 
 ## Supported tags
 
-* `latest`, `v7.2.0.2`
-* `v7.2.0.1`
-* `v7.1.0.1`
-* `v7.0.0.1`
-* `v7.0.0.0-alpha2`
-* `v7.0.0.0-alpha1`
-* `v6.2.0.1`
-* `v6.1.0.1`
-* `v6.0.1.2`
-* `v6.0.1.1`
-* `v5.5.5.1`
++ `latest` [Dockerfile](https://github.com/xebialabs-community/xl-docker-demo-xld/blob/master/Dockerfile)
++ `latest-slim` [Dockerfile](https://github.com/xebialabs-community/xl-docker-demo-xld/blob/master/Dockerfile-slim)
++ `v7.2.0.3`, `v7.2.0.3-alpine` [Dockerfile](https://github.com/xebialabs-community/xl-docker-demo-xld/blob/v7.2.0.3/Dockerfile)
++ `v7.2.0.3-slim` [Dockerfile](https://github.com/xebialabs-community/xl-docker-demo-xld/blob/v7.2.0.3/Dockerfile-slim)
++ `v7.2.0.2`
++ `v7.2.0.1`
++ `v7.1.0.1`
++ `v7.0.0.1`
++ `v7.0.0.0-alpha2`
++ `v7.0.0.0-alpha1`
++ `v6.2.0.1`
++ `v6.1.0.1`
++ `v6.0.1.2`
++ `v6.0.1.1`
+
+## Dockerfile
+### `Dockerfile` builds the container with base image `jre-alpine`
+### `Dockerfile-slim` builds the container with base image `jre-slim`
 
 ## Starting
 
