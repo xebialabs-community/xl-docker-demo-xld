@@ -1,6 +1,6 @@
-FROM openjdk:jre-slim
+FROM openjdk:jre-alpine
 MAINTAINER XebiaLabs "info@xebialabs.com"
-RUN apt-get update && apt-get install -y supervisor wget
+RUN apk update && apk add supervisor wget
 RUN wget -O /tmp/xl-deploy-trial-server.zip https://dist.xebialabs.com/xl-deploy-trial-server.zip && \
     mkdir -p /opt/xld && unzip /tmp/xl-deploy-trial-server.zip -d /opt/xld && \
     mv /opt/xld/xl-deploy-*-server /opt/xld/server && \
