@@ -33,8 +33,8 @@ Docker image that has XLD installed.
 + `v6.0.1.1`
 
 ## Dockerfile
-### `Dockerfile` builds the container with base image `jre-alpine`
-### `Dockerfile-slim` builds the container with base image `jre-slim`
++ `Dockerfile` builds the container with base image `jre-alpine`
++ `Dockerfile-slim` builds the container with base image `jre-slim`
 
 ## Starting
 
