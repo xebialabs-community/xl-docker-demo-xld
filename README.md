@@ -17,7 +17,7 @@ Docker image that has XLD installed.
 
 ## Supported tags
 
-* `latest`, `v7.2.0.2`, `v7.2.0.2-slim`
+* `latest`, `v7.2.0.2`, `latest-slim`
 * `v7.2.0.1`
 * `v7.1.0.1`
 * `v7.0.0.1`
@@ -28,6 +28,10 @@ Docker image that has XLD installed.
 * `v6.0.1.2`
 * `v6.0.1.1`
 * `v5.5.5.1`
+
+## Dockerfile
+### `Dockerfile` builds the container with base image `jre-alpine`
+### `Dockerfile-slim` builds the container with base image `jre-slim`
 
 ## Starting
 
