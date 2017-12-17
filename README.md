@@ -19,6 +19,7 @@ Docker image that has XLD installed.
 
 + `latest` [Dockerfile](https://github.com/xebialabs-community/xl-docker-demo-xld/blob/master/Dockerfile)
 + `latest-slim` [Dockerfile](https://github.com/xebialabs-community/xl-docker-demo-xld/blob/master/Dockerfile-slim)
++ `v7.5.0.1`
 + `v7.2.0.3`, `v7.2.0.3-alpine` [Dockerfile](https://github.com/xebialabs-community/xl-docker-demo-xld/blob/v7.2.0.3/Dockerfile)
 + `v7.2.0.3-slim` [Dockerfile](https://github.com/xebialabs-community/xl-docker-demo-xld/blob/v7.2.0.3/Dockerfile-slim)
 + `v7.2.0.2`
