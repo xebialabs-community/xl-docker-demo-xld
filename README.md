@@ -56,7 +56,7 @@ The license volume mount is needed to provide a valid license, or store a licens
 
 ## Extending this image
 
-If you're creating an image based on this image as a parent, know that you can add a config fragment (i.e. `myapp.conf`) to the `/etc/supervisor.d/conf` directory, see the supervisor docs [here](http://supervisord.org/configuration.html#include-section-settings). That will allow you to add your own programs to supervisor without having to override (copy/paste) the entire file.
+If you're creating an image based on this image as a parent, know that you can add a config fragment (i.e. `myapp.conf`) to the `/etc/supervisor/conf.d` directory, see the supervisor docs [here](http://supervisord.org/configuration.html#include-section-settings). That will allow you to add your own programs to supervisor without having to override (copy/paste) the entire file.
 
 ## Alpha tags
 Please be aware that alpha images are not stable. Anything in there can break, is not guaranteed to be backwards or forwards compatible and there will not be any kind of support provided for them.
