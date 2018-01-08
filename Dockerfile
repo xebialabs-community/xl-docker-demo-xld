@@ -22,6 +22,7 @@ RUN /opt/xld/server/bin/run.sh -setup -reinitialize -force && \
     rm -rf /opt/xld/server/log/* /opt/xld/server/tmp/*
 
 COPY resources/supervisord.conf /etc/supervisord.conf
+COPY resources/xld.conf /etc/supervisor/conf.d/xld.conf
 
 CMD ["/usr/bin/supervisord"]
 
