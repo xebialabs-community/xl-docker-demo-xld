@@ -20,11 +20,11 @@ RUN wget --progress=dot:giga -O /tmp/xl-deploy-trial-cli.zip https://dist.xebial
 COPY resources/deployit.conf /opt/xld/server/conf/deployit.conf
 
 RUN /opt/xld/server/bin/run.sh -setup -reinitialize -force && \
-    ln -fs /license/deployit-license.lic /opt/xld/server/conf/deployit-license.lic && \
-    rm -rf /opt/xld/server/log/* /opt/xld/server/tmp/*
+    rm -rf /opt/xld/server/log/* /opt/xld/server/tmp/* && \
+    ln -fs /license/deployit-license.lic /opt/xld/server/conf/deployit-license.lic
 
 COPY resources/supervisord.conf /etc/supervisord.conf
-COPY resources/xld.conf /etc/supervisor/conf.d/xld.conf
+COPY resources/xld.conf /etc/supervisor/conf.d/
 
 CMD ["/usr/bin/supervisord"]
 
